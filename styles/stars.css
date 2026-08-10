@@ -1,0 +1,202 @@
+.stars-hero {
+    min-height: 380px;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.95)),
+        url('https://images.unsplash.com/photo-1530634693970-4f30bb329de4?q=80&w=1351&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+        center/cover no-repeat scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--accent-light);
+    position: relative;
+}
+
+.stars-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(251, 191, 36, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+.stars-hero-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.stars-hero-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stars-hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
+    color: var(--accent-light);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+}
+
+.stars-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.star-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+
+/* Stars Grid */
+.stars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stars-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.star-card {
+    background: linear-gradient(160deg, #1e2d45 0%, #0f172a 100%);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-top: 3px solid var(--accent-light);
+    transition: all 0.35s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    position: relative;
+}
+.star-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 200px;
+    background: radial-gradient(ellipse at top, rgba(251, 191, 36, 0.07) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.star-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.star-card:hover {
+    border-color: var(--accent-light);
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+.star-image {
+    height: 260px;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.star-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    pointer-events: none;
+}
+
+.star-content {
+    padding: 1rem 1.5rem 1.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.star-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.star-name {
+    font-family: 'Cinzel', serif;
+    color: var(--accent-light);
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    text-shadow:
+        0 0 20px rgba(251, 191, 36, 0.5),
+        0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.05em;
+}
+.star-header::after {
+    display: none; /* handled by a separator below the header instead */
+}
+
+.star-divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-light), transparent);
+    margin: 0 auto 1rem;
+}
+
+.star-description {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hero */
+    .stars-hero {
+        height: auto;
+        min-height: 300px;
+        background-attachment: scroll; 
+        padding: 3rem 1rem;
+    }
+
+    .stars-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .stars-hero-content p {
+        font-size: 1rem;
+    }
+
+    /* stars cards */
+    .stars-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}

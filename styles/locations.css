@@ -1,0 +1,926 @@
+/* Locations Page Specific Styles */
+
+/* Hero Section for Locations */
+.locations-hero {
+    height: 380px;
+    background: 
+        linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+        url('/images/NovoContinente.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+    border-bottom: 3px solid var(--accent-light);
+    position: relative;
+}
+
+.locations-hero-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.locations-hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-light);
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+}
+
+.locations-hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.search-container {
+    display: flex;
+    max-width: 500px;
+    margin: 2rem auto 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#locationSearch {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+}
+
+#searchBtn {
+    padding: 1rem 2rem;
+    background: var(--accent-dark);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+#searchBtn:hover {
+    background: var(--accent-light);
+}
+
+/* Filter Controls */
+.filter-controls {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.filter-group h3 {
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: var(--text-light);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.filter-tag:hover {
+    border-color: var(--accent-dark);
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.filter-tag.active {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: white;
+}
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    color: var(--text-light);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    border-color: var(--accent-light);
+}
+
+.view-btn.active {
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: var(--primary-dark);
+}
+
+/* Regions Section */
+.regions-section {
+    margin-bottom: 3rem;
+}
+
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.region-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.region-card:hover {
+    border-color: var(--accent-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.region-card[data-region="region_one"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #681074 100%);
+}
+
+.region-card[data-region="region_two"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #717983 100%);
+}
+
+.region-card[data-region="region_three"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2d482f 100%);
+}
+
+.region-card[data-region="region_four"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #544222 100%);
+}
+
+
+.region-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.region-card[data-region="region_one"] .region-icon {
+    color: #980caa;
+}
+
+.region-card[data-region="region_two"] .region-icon {
+    color: #c4c4c4;
+}
+
+.region-card[data-region="region_three"] .region-icon {
+    color: #00d80e;
+}
+
+.region-card[data-region="region_four"] .region-icon {
+    color: #d1890e;
+}
+
+
+.region-card h3 {
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.locations-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.location-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.location-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-card:hover {
+    border-color: var(--region-color);
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 0 16px color-mix(in srgb, var(--region-color) 20%, transparent); /* subtle glow */
+}
+
+.location-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.location-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-dark);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.location-content {
+    padding: 1.5rem;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.location-title {
+    color: var(--accent-light);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.location-region {
+    color: var(--accent-dark);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.location-desc {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.location-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.detail-item i {
+    color: var(--accent-light);
+}
+
+.location-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.location-tag {
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--accent-dark);
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.view-details {
+    background: transparent;
+    color: var(--accent-dark);
+    border: 1px solid var(--accent-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    margin-left: auto;
+}
+
+
+.view-details:hover {
+    background: var(--accent-dark);
+    color: white;
+}
+
+
+.map-wrapper {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    margin-top: 2rem;
+}
+
+/* =============================================
+   LEAFLET MAP CONTAINER
+   EXPLANATION: Leaflet REQUIRES an explicit height on its container.
+   500px is a good default — tall enough to see the whole map,
+   not so tall it pushes everything else off screen.
+   On mobile we reduce this to 350px.
+============================================= */
+#wiki-map {
+    height: 500px;
+    width: 100%;
+    background: #0f172a; /* fallback while image loads */
+}
+
+/* =============================================
+   CONTROL HINT BAR
+   EXPLANATION: Small bar at the bottom of the map telling users
+   how to interact. Subtle semi-transparent background so it doesn't
+   cover the map but is always readable.
+============================================= */
+.map-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    pointer-events: none; /* doesn't block map interactions */
+}
+
+/* =============================================
+   DEBUG COORDS DISPLAY
+   EXPLANATION: Only visible when debugMode = true in map.js.
+   Shows current cursor coordinates so you can place markers accurately.
+============================================= */
+#map-debug-coords {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--accent-light);
+    font-size: 0.8rem;
+    font-family: monospace;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    z-index: 1001;
+    pointer-events: none;
+    display: none; /* shown by JS only in debug mode */
+}
+
+/* Show only when it has content (debug mode active) */
+#map-debug-coords:not(:empty) {
+    display: block;
+}
+
+/* =============================================
+   MAP LEGEND
+   EXPLANATION: Two-column grid for regions, single column for types.
+   Sits below the map so it doesn't compete visually.
+============================================= */
+.map-legend {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid var(--accent-light);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.map-legend h4 {
+    color: var(--accent-light);
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-regions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.5rem;
+}
+
+.legend-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* =============================================
+   CUSTOM MARKER ICON
+   EXPLANATION: The marker is a circle with an icon inside,
+   coloured by region using CSS custom property --marker-color.
+   The pulse ring behind it is a subtle animated glow that
+   draws attention to markers without being distracting.
+============================================= */
+.wiki-marker {
+    position: relative;
+}
+
+.marker-pin {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.92);
+    border: 2.5px solid var(--marker-color, #fbbf24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--marker-color, #fbbf24);
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.marker-pin:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 16px var(--marker-color, #fbbf24);
+}
+
+.marker-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--marker-color, #fbbf24);
+    animation: markerPulse 2.5s ease-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes markerPulse {
+    0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+
+/* =============================================
+   POPUP STYLES
+   EXPLANATION: Leaflet popups have their own default styles that
+   we need to override. The .wiki-leaflet-popup class is passed
+   to bindPopup() as className so we can target it specifically.
+============================================= */
+.wiki-leaflet-popup .leaflet-popup-content-wrapper {
+    background: #1a2540;
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    overflow: hidden;
+}
+
+.wiki-leaflet-popup .leaflet-popup-tip {
+    background: #1a2540;
+}
+
+.wiki-leaflet-popup .leaflet-popup-content {
+    margin: 0;
+    width: auto !important;
+}
+
+/* Close button */
+.wiki-leaflet-popup .leaflet-popup-close-button {
+    color: var(--text-muted) !important;
+    font-size: 1.1rem !important;
+    top: 0.4rem !important;
+    right: 0.5rem !important;
+    z-index: 10;
+}
+
+.wiki-leaflet-popup .leaflet-popup-close-button:hover {
+    color: var(--accent-light) !important;
+}
+
+/* Popup inner content */
+.wiki-popup {
+    padding: 1rem 1.2rem 1rem;
+    min-width: 200px;
+}
+
+.popup-header {
+    padding-left: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.popup-type {
+    font-size: 0.72rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.popup-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--accent-light);
+    margin: 0 0 0.2rem;
+    line-height: 1.2;
+}
+
+.popup-region {
+    font-size: 0.78rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.popup-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0 0 0.8rem;
+}
+
+.popup-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--accent-dark);
+    text-decoration: none;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.popup-link:hover {
+    background: var(--accent-dark);
+    color: white;
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+    #wiki-map {
+        height: 350px;
+    }
+
+    .legend-regions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #wiki-map {
+        height: 280px;
+    }
+
+    .legend-regions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legend-types {
+        gap: 0.6rem;
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: var(--secondary-dark);
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    animation: modalSlideIn 0.3s;
+    position: relative; /* for close button positioning */
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+    transition: color 0.3s;
+    pointer-events: auto; 
+    display: block; 
+    width: 40px;    
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.close-modal:hover {
+    color: var(--accent-light);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hero */
+    .locations-hero {
+        height: auto;
+        min-height: 300px;
+        background-attachment: scroll; 
+        padding: 3rem 1rem;
+    }
+
+    .locations-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .locations-hero-content p {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        margin-top: 1.5rem;
+    }
+
+    /* Filter bar */
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .filter-tags {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .filter-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Location cards */
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Regions */
+    .regions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .region-card {
+        padding: 1.2rem;
+    }
+
+    .region-icon {
+        font-size: 2rem;
+    }
+
+    /* Map */
+    .map-placeholder {
+        height: 250px;
+    }
+
+    /* Modal */
+    .modal {
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 0;
+        min-height: 100dvh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-body {
+        padding: 1.2rem;
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .close-modal {
+        position: fixed;
+        top: 0.8rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: rgba(15, 23, 42, 0.85);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 1100;
+    }
+
+    /* Modal content layout — collapse 2-col grid to 1-col */
+    .modal-header h2 {
+        font-size: 1.8rem;
+        padding-right: 2.5rem; /* make room for close button */
+    }
+
+    .modal-subtitle {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .modal-image {
+        height: 180px;
+        margin-bottom: 1.2rem;
+    }
+
+    .modal-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.2rem;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0.6rem;
+    }
+
+    .fact {
+        padding: 0.7rem;
+        gap: 0.6rem;
+    }
+
+    .fact i {
+        font-size: 1.2rem;
+    }
+
+    .modal-section {
+        margin-bottom: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .modal-section h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .locations-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .regions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-tags {
+        justify-content: flex-start;
+    }
+
+    
+    .facts-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .location-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .view-details {
+        width: 100%;
+        text-align: center;
+    }
+}
+.hidden-card {
+        display: none !important;
+    }
+
+    .show-more-btn {
+        display: block;
+        margin: 2rem auto 0;
+        padding: 0.8rem 2.5rem;
+        background: transparent;
+        border: 2px solid var(--accent-dark);
+        color: var(--accent-dark);
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .show-more-btn:hover {
+        background: var(--accent-dark);
+        color: white;
+    }

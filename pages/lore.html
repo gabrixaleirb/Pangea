@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WORLD NAME] - Lore</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/lore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+  </head>
+  <body>
+    <nav class="navbar">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">
+                <h1><i class="fas fa-dragon"></i> [WORLD NAME]</h1>
+                <p class="tagline">[Your tagline here]</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="../index.html#world">World</a>
+                <li><a href="../pages/characters.html">Characters</a></li>
+                <li><a href="../pages/locations.html" >Locations</a></li>
+                <li><a href="#lore" class="active">Lore</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="lore-hero">
+      <div class="lore-hero-overlay">
+        <div class="lore-hero-content">
+          <h1><i class="fas fa-book-open"></i> Chronicles of [WORLD NAME]</h1>
+          <p>Tagline.</p>
+
+    <div class="search-container">
+            <input type="text" id="loreSearch" placeholder="Search stories...">
+            <button id="loreSearchBtn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="lore-container">
+      <div class="lore-filter-controls">
+        <div class="filter-group">
+          <h3>Filter by category:</h3>
+          <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">All</button>
+            <button class="filter-tag" data-filter="history"><i class="fas fa-scroll"></i> History</button>
+            <button class="filter-tag" data-filter="legend"><i class="fas fa-star"></i> Legends</button>
+            <button class="filter-tag" data-filter="chronicle"><i class="fas fa-feather-alt"></i> Chronicle</button>
+            <button class="filter-tag" data-filter="myth"><i class="fas fa-dragon"></i> Myths</button>
+            <button class="filter-tag" data-filter="prophecy"><i class="fas fa-book"></i> Prophecies</button>
+          </div>
+        </div>
+      </div>
+      <section class="lore-main">
+        <h2 class="section-title">All Records</h2>
+        <div class="lore-grid" id="loreGrid">
+          <!-- Cards injected by lore.js -->
+        </div>
+      </section>
+
+    </main>
+
+    <div class="lore-modal" id="loreModal">
+      <div class="lore-modal-content">
+        <button class="close-lore-modal" id="closeLoreModal">&times;</button>
+        <div class="lore-modal-body" id="loreModalBody">
+          <!-- Full story injected by lore.js -->
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+        <p>[WORLD NAME] • Built with HTML, CSS, JavaScript & Love.</p>
+        <p class="footer-note">[World created by [YOUR NAME]. Thanks to all our incredible players.]</p>
+        <div class="footer-socials">
+        <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+    </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/lore.js"></script>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    
+  </body>
+</html>

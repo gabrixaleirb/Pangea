@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WORLD NAME] - Characters</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/characters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <h1><i class="fas fa-dragon"></i> [WORLD NAME]</h1>
+          <p class="tagline">[Your tagline here]</p>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#world">World</a></li>
+          <li><a href="../pages/characters.html" class="active">Characters</a></li>
+          <li><a href="../pages/locations.html">Locations</a></li>
+          <li><a href="../pages/lore.html">Lore</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+   
+    <section class="characters-hero">
+      <div class="characters-hero-content">
+        <h1><i class="fas fa-users"></i> [WORLD NAME] Characters</h1>
+        <p>Tagline.</p>
+      </div>
+    </section>
+
+    <main class="characters-container">
+
+      
+      <section class="characters-section" id="pcs">
+        <div class="characters-section-header">
+          <div class="section-label pc-label">
+            <i class="fas fa-shield-alt"></i> Players
+          </div>
+          <h2 class="section-title">Player Characters</h2>
+          <p class="section-subtitle">The adventurers writing the history of [WORLD NAME] with their own hands.</p>
+        </div>
+        <div class="characters-grid" id="pcGrid">
+          
+        </div>
+      </section>
+
+      <section class="characters-section" id="npcs">
+        <div class="characters-section-header">
+          <div class="section-label npc-label">
+            <i class="fas fa-crown"></i> NPCs
+          </div>
+          <h2 class="section-title">Important Characters</h2>
+          <p class="section-subtitle">Important figures who left their mark on the campaigns and destiny of [WORLD NAME].</p>
+        </div>
+        <div class="characters-grid" id="npcGrid">
+         
+        </div>
+      </section>
+
+    </main>
+
+   
+    <div class="character-modal" id="characterModal">
+      <div class="character-modal-content">
+        <button class="close-character-modal" id="closeCharacterModal">&times;</button>
+        <div class="character-modal-body" id="characterModalBody">
+          
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <p>[WORLD NAME] • Built with HTML, CSS, JavaScript & Love.</p>
+        <p class="footer-note">[World created by [YOUR NAME]. Thanks to all our incredible players.]</p>
+        <div class="footer-socials">
+        <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+    </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/characters.js"></script>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+  </body>
+</html>

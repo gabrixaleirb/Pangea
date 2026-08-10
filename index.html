@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║           RPG WORLD WIKI TEMPLATE — index.html               ║
+  ║                                                              ║
+  ║  QUICK START:                                                ║
+  ║  1. Replace every [WORLD NAME] with your world's name        ║
+  ║  2. Replace every [TAGLINE] with your world's tagline        ║
+  ║  3. Edit the hero section text                               ║
+  ║  4. Edit the card grid — add/remove cards as needed          ║
+  ║  5. Update the footer credit                                 ║
+  ║  6. See styles/general.css :root block to change colors      ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE: Replace with your world name -->
+    <title>[WORLD NAME]</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
+  </head>
+  <body>
+
+    <!-- NAVIGATION — add/remove <li> items to match your pages -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <!-- CHANGE: swap fa-dragon for any Font Awesome icon -->
+          <h1><i class="fas fa-dragon"></i> [WORLD NAME]</h1>
+          <!-- CHANGE: your world tagline -->
+          <p class="tagline">[Your tagline here]</p>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#world">World</a></li>
+          <li><a href="pages/characters.html">Characters</a></li>
+          <li><a href="pages/locations.html">Locations</a></li>
+          <li><a href="pages/lore.html">Lore</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO — background image is set in styles/general.css under .hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <!-- CHANGE: your welcome headline -->
+        <h2>Welcome to [WORLD NAME]</h2>
+        <!-- CHANGE: short flavour text about your world -->
+        <p>[A short, atmospheric description of your world. What makes it unique? 1-3 sentences.]</p>
+        <div class="hero-buttons">
+          <a href="pages/lore.html" class="btn btn-primary">Explore the World</a>
+          <a href="pages/characters.html" class="btn btn-secondary">Meet the Characters</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- WORLD OVERVIEW CARD GRID
+           Each card is a clickable section link.
+           Add, remove, or reorder cards freely.
+           Icon names: browse fontawesome.com for options. -->
+      <section class="section" id="world">
+        <h2 class="section-title">World Overview</h2>
+        <div class="card-grid">
+
+          <a href="pages/locations.html" class="card">
+            <div class="card-icon"><i class="fas fa-map"></i></div>
+            <h3>Kingdoms &amp; Nations</h3>
+            <p>[How many regions does your world have? What cultures live there?]</p>
+          </a>
+
+          <a href="pages/lore.html" class="card">
+            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Legends &amp; Stories</h3>
+            <p>[What myths, prophecies, and chronicles exist in your world?]</p>
+          </a>
+
+          <a href="pages/gods.html" class="card">
+            <div class="card-icon"><i class="fas fa-landmark"></i></div>
+            <h3>Gods &amp; Pantheons</h3>
+            <p>[Old gods, new gods — what divine forces shape your world?]</p>
+          </a>
+
+          <a href="pages/dangers.html" class="card">
+            <div class="card-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Fauna &amp; Flora</h3>
+            <p>[Magical creatures and strange plants — a survival guide for adventurers.]</p>
+          </a>
+
+          <a href="pages/stars.html" class="card">
+            <div class="card-icon"><i class="fas fa-star"></i></div>
+            <h3>Sky &amp; Stars</h3>
+            <p>[Constellations, moons, and the cosmology of your world.]</p>
+          </a>
+
+          <a href="pages/timeline.html" class="card">
+            <div class="card-icon"><i class="fas fa-hourglass-half"></i></div>
+            <h3>Timeline</h3>
+            <p>[Historical eras, key events, and turning points of your world's history.]</p>
+          </a>
+
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER — update with your world name and social links -->
+    <footer class="footer">
+      <p>[WORLD NAME] • Built with HTML, CSS, JavaScript &amp; Love.</p>
+      <!-- CHANGE: credit yourself or your group -->
+      <p class="footer-note">[World created by [YOUR NAME]. Thanks to all our incredible players.]</p>
+      <div class="footer-socials">
+        <!-- CHANGE: your YouTube URL, or remove this link -->
+        <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+  </body>
+</html>
