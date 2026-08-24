@@ -43,23 +43,23 @@ document.addEventListener('DOMContentLoaded', function () {
         // ═══════════════════════════════════════════════════════════════
         {
             id: 1,
-            year: 1,
-            era: "[Ancient Era Name]",
-            title: "[World Creation / Founding Event]",
-            summary: "The moment your world began — a creation myth, a great founding, or the dawn of recorded history.",
-            details: "[Full description of this pivotal event. What happened? Who was involved? What changed forever?",
+            year: 3571,
+            era: "Nova Era",
+            title: "Criação da Guilda - Forte do Alcatraz",
+            summary: "Primeira campanha aonde jogadores lutaram contra o mau na ilha do Chipre",
+            details: "A conquista de 3 herois Mantovani, Scarpas e Opharios da antia ruina e criação da guilda do Alcatras",
             type: "foundation",
             impact: "critical"
         },
         {
             id: 2,
-            year: 300,
-            era: "[Ancient Era Name]",
-            title: "[First Great War]",
-            summary: "A devastating conflict that reshaped the map of your world.",
-            details: "Who fought? Why? What was the outcome? How many died? What kingdoms rose or fell?",
-            type: "war",
-            impact: "critical"
+            year: 3582 ,
+            era: "Nova Era",
+            title: "Bulgaria sofre ataques de vários problemas",
+            summary: "xxxxxxxxx",
+            details: "xxxxxxxxxxx",
+            type: "cultural",
+            impact: "medium"
         },
         {
             id: 3,
