@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             backstory: "Full backstory for this character.",
             image: "https://placehold.co/400x600/1e293b/fbbf24?text=Character+2",
             player: "[Player Name]",
-            faction: "[Faction]",
+            faction: "Guilda do Exterminio do Norte",
             status: "Active"
         }
         // ✏️ Add more player characters here, following the same format.
@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const npcCharacters = [
         {
             id: 101,
-            name: "[NPC Name]",
-            race: "[Race]",
-            class: "[Role / Class]",
+            name: "Vicent Karendeniz",
+            race: "Humano",
+            class: "Capitão pirata",
             excerpt: "A villain, ally, or mysterious stranger — one sentence about them.",
             backstory: "Full backstory or description for this NPC.",
             image: "/images/personagens/Placeholder.webp",
-            faction: "[Faction or Kingdom]",
+            faction: "VictoriaShip",
             status: "Active"
         },
         {
