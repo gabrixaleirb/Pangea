@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Mago",
             excerpt: "A short, punchy sentence that sums up who this character is.",
             backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
-            image: "/images/personagens/Placeholder.webp",
+            image: "/images/personagens/Adon%20e%20Balladur.jpeg",
             player: "Gabrix",
             faction: "[Faction or Party Name]",
             status: "Active"
