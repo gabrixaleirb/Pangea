@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const playerCharacters = [
         {
             id: 1,
-            name: "[PC Name]",
-            race: "[Race]",
-            class: "[Class]",
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
             excerpt: "A short, punchy sentence that sums up who this character is.",
             backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
             image: "/images/personagens/Placeholder.webp",
-            player: "[Player Name]",
+            player: "Gabrix",
             faction: "[Faction or Party Name]",
             status: "Active"
         },
