@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Guerreiro",
             excerpt: "A short, punchy sentence that sums up who this character is.",
             backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
-            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/nattvir.png?raw=true",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/nattvig.png?raw=true",
             player: "Yoha",
             faction: "[Faction or Party Name]",
             status: "Active"
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Ladino",
             excerpt: "Another short summary sentence for the card.",
             backstory: "Full backstory for this character.",
-            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/nattvir.png?raw=true",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/ulf.png?raw=true",
             player: "Victor",
             faction: "[Faction or Party Name]",
             status: "Deceased"
