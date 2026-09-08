@@ -52,6 +52,61 @@ document.addEventListener('DOMContentLoaded', function () {
             player: "Gabrix",
             faction: "[Faction or Party Name]",
             status: "Active"
+        },{
+            id: 3,
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
+            excerpt: "A short, punchy sentence that sums up who this character is.",
+            backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "[Faction or Party Name]",
+            status: "Active"
+        },{
+            id: 4,
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
+            excerpt: "A short, punchy sentence that sums up who this character is.",
+            backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "[Faction or Party Name]",
+            status: "Active"
+        },{
+            id: 5,
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
+            excerpt: "A short, punchy sentence that sums up who this character is.",
+            backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "[Faction or Party Name]",
+            status: "Active"
+        },{
+            id:6,
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
+            excerpt: "A short, punchy sentence that sums up who this character is.",
+            backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "[Faction or Party Name]",
+            status: "Active"
+        },{
+            id: 7,
+            name: "Adon Pakhnes",
+            race: "Elfo das neves",
+            class: "Mago",
+            excerpt: "A short, punchy sentence that sums up who this character is.",
+            backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "[Faction or Party Name]",
+            status: "Active"
         },
         {
             id: 2,
