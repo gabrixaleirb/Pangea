@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ─────────────────────────────────────────────
     const npcCharacters = [
         {
-            id: 101,
+            id: 1001,
             name: "Vicent Karendeniz",
             race: "Humano",
             class: "Capitão pirata",
@@ -139,17 +139,56 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "/images/personagens/Placeholder.webp",
             faction: "VictoriaShip",
             status: "Active"
-        },
-        {
-            id: 102,
-            name: "[NPC Name 2]",
-            race: "[Race]",
-            class: "[Role]",
-            excerpt: "Short description of this NPC's role in the world.",
-            backstory: "Full description here.",
-            image: "https://placehold.co/400x600/1e293b/fbbf24?text=NPC+2",
-            faction: "[Faction]",
+        },{
+            id: 1003,
+            name: "Botinhas",
+            race: "Cabra",
+            class: "Cavalaria demoniaca",
+            excerpt: "A villain, ally, or mysterious stranger — one sentence about them.",
+            backstory: "Full backstory or description for this NPC.",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/botinhas.png?raw=true",
+            faction: "Familia Volgunn",
+            status: "Active"
+        },{
+            id: 1004,
+            name: "Sinforoso",
+            race: "Capeta",
+            class: "General demonio infernal",
+            excerpt: "A villain, ally, or mysterious stranger — one sentence about them.",
+            backstory: "Full backstory or description for this NPC.",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/sinforoso.png?raw=true",
+            faction: "Familia Volgunn",
+            status: "Active"
+        },{
+            id: 1005,
+            name: "Jorginho",
+            race: "Rato",
+            class: "Rato",
+            excerpt: "A villain, ally, or mysterious stranger — one sentence about them.",
+            backstory: "Full backstory or description for this NPC.",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/jorginho.png?raw=true",
+            faction: "Familiar Helena",
             status: "Deceased"
+        },{
+            id: 1006,
+            name: "Balladur",
+            race: "Cobra magica",
+            class: "Quetzalcoatl",
+            excerpt: "A villain, ally, or mysterious stranger — one sentence about them.",
+            backstory: "Full backstory or description for this NPC.",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/balladur.png?raw=true",
+            faction: "Familiar Adon",
+            status: "Active"
+        },{
+            id: 1002,
+            name: "Olga e Irina",
+            race: "Humanas",
+            class: "Artificies e Magus",
+            excerpt: "Esposa e filha de Laster",
+            backstory: "Full description here.",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/olga_irina.png?raw=true",
+            faction: "Familia Volgunn",
+            status: "Active"
         }
         // ✏️ Add more NPCs here. NPC ids should be clearly separate
         // from PC ids to avoid collisions — starting at 101 is a good convention.
