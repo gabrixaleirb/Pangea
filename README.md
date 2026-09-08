@@ -1,5 +1,7 @@
 # ⚔️ RPG World Wiki Template
 
+https://gabrixaleirb.github.io/Pangea/
+
 A fully featured, dark-fantasy wiki template for tabletop RPG worldbuilders, dungeon masters, and campaign creators. Built with pure HTML, CSS, and JavaScript — no frameworks, no build tools, no accounts needed.
 
 ---
