@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Adon Pakhnes",
             race: "Elfo das neves",
             class: "Mago",
-            excerpt: "mago maluco que viaja entre multiuniversos",
+            excerpt: "Mago maluco que viaja entre multiuniversos",
             backstory: "Adon Paknhes, o mago maluco que por ter uma deusa da magia aprisionada em sua fica fadado e viver uma vida descontrolada se teletransportando entre multiuniversos. Sempre acompanhado do seu melhor amigo Balladur em aventuras do balacobaco.",
             image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/Adon.webp?raw=true",
             player: "Gabrix",
