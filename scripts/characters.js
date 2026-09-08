@@ -87,38 +87,38 @@ document.addEventListener('DOMContentLoaded', function () {
             status: "Active"
         },{
             id:6,
-            name: "Adon Pakhnes",
-            race: "Elfo das neves",
+            name: "Helga",
+            race: "Kitsune",
             class: "Mago",
-            excerpt: "A short, punchy sentence that sums up who this character is.",
+            excerpt: "A cleriga que salva vidas",
             backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
-            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/Laster.png?raw=true",
-            player: "Gabrix",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/helga.png?raw=true",
+            player: "Ari",
             faction: "[Faction or Party Name]",
             status: "Active"
         },{
             id: 7,
-            name: "Adon Pakhnes",
-            race: "Elfo das neves",
-            class: "Mago",
+            name: "Náttvig Askvaldson",
+            race: "Dampiro",
+            class: "Guerreiro",
             excerpt: "A short, punchy sentence that sums up who this character is.",
             backstory: "Write the full backstory here. This appears in the character modal when a visitor clicks 'View'. It can be as long as you like.",
-            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/Laster.png?raw=true",
-            player: "Gabrix",
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/nattvir.png?raw=true",
+            player: "Yoha",
             faction: "[Faction or Party Name]",
             status: "Active"
         },
         {
             id: 2,
-            name: "[PC Name 2]",
-            race: "[Race]",
-            class: "[Class]",
+            name: "Ülf'Nott Rëinhyr",
+            race: "Humano",
+            class: "Ladino",
             excerpt: "Another short summary sentence for the card.",
             backstory: "Full backstory for this character.",
-            image: "https://placehold.co/400x600/1e293b/fbbf24?text=Character+2",
-            player: "[Player Name]",
-            faction: "Guilda do Exterminio do Norte",
-            status: "Active"
+            image: "https://github.com/gabrixaleirb/Pangea/blob/master/images/personagens/nattvir.png?raw=true",
+            player: "Victor",
+            faction: "[Faction or Party Name]",
+            status: "Deceased"
         }
         // ✏️ Add more player characters here, following the same format.
         // Remember to increment the id number each time!
